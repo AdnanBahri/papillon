@@ -2,6 +2,12 @@ import React from "react";
 import Section from "../shared/section";
 import elf from "../assets/elf.png";
 import { FaChevronDown } from "react-icons/fa";
+import {
+  academyData,
+  advisoryData,
+  agencyData,
+  allianceData,
+} from "../utils/dummy";
 
 const HomePage = () => {
   return (
@@ -47,6 +53,7 @@ const HomePage = () => {
         description={
           "Our Strategic Consultants bring a voice of experience and expertise to your organization."
         }
+        data={advisoryData}
       />
 
       <Section
@@ -54,6 +61,7 @@ const HomePage = () => {
         description={
           "Educate and Inspire your people by given them the knowledge excel in the latest technology, tactics and training."
         }
+        data={academyData}
       />
 
       <Section
@@ -61,6 +69,7 @@ const HomePage = () => {
         description={
           "Execute flawlessly with strategic talent and expert artistry. Our Agency will become a trusted extension of your marketing department."
         }
+        data={agencyData}
       />
 
       <Section
@@ -68,6 +77,7 @@ const HomePage = () => {
         description={
           "Execute flawlessly with strategic talent and expert artistry. Our Agency will become a trusted extension of your marketing department."
         }
+        data={allianceData}
       />
 
       <section className="flex flex-col w-full space-y-12">

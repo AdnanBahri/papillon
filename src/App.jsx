@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/footer";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" index element={<HomePage />} />
+        <Route path="/contact" index element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>
